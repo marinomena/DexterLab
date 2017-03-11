@@ -13,4 +13,4 @@ WORKDIR /home/dexter/SpringBootWebSerService1/initial/
 
 ENTRYPOINT java -jar gs-rest-service-0.1.0.jar
 
-EXPOSE 8080
+EXPOSE 8000
