@@ -2,7 +2,7 @@
 node {
  
   stage('Checkout') {
-	  git url: 'https://github.com/marinomena/lab.git'
+	  git url: 'https://github.com/marinomena/DexterLab.git'
 	  
 	  def mvnHome = tool 'maven-3'
 	  env.PATH = "${mvnHome}/bin:${env.PATH}"
@@ -13,7 +13,7 @@ node {
   }
 
   stage('Docker build'){
-  	def image = docker.build('initial/ingatms:latest', '.')
+  	def image = docker.build('dexter/ingatms:latest', '.')
   }
 
 }
