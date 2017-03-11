@@ -13,4 +13,4 @@ WORKDIR /home/dexter
 
 ENTRYPOINT java -jar gs-rest-service-0.1.0.jar
 
-EXPOSE 8000
+EXPOSE 8001
