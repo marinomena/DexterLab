@@ -13,7 +13,7 @@ node {
   }
 
   stage('Docker build'){
-  	def image = docker.build('dexter/ingatms:latest', '.')
+  	def image = docker.build('DexterLab/ingatms:latest', '.')
   }
 
 }
